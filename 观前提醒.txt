@@ -1,0 +1,12 @@
+食用时需要Python环境，作者目前只测试了Python3.12，其他版本应该没有什么太大的问题
+双击“食用.bat”即可开始食用
+并且你需要安装“安装前置库.bat”文件里面的所有库
+想要导入其他项目食用的话只需要将“mcskin”文件夹复制到你的项目中去，然后使用：
+from mcskin import mcskin
+来导入
+
+
+方法讲解：
+get_uuid(name)，此方法中的name是玩家名，可返回name的uuid
+is_uuid(uuid)，此方法会判断uuid是否为uuid
+get_skin_2(uuid,mode)，此方法会以二进制形式和mode方式返回uuid为uuid的玩家的模型
